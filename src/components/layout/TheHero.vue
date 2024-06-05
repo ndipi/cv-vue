@@ -123,6 +123,7 @@ ul {
 }
 li {
   padding: 1rem 0 1rem 0;
+  font-size: 1.2rem;
 }
 .hero-enter-from {
   opacity: 0;
@@ -154,5 +155,13 @@ li {
 } */
 .pContainer {
   padding: 20px;
+}
+div.headerMobile {
+  margin: 0;
+  padding: 0;
+}
+div.headerMobile div {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 </style>
