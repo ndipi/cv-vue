@@ -38,7 +38,11 @@ export default {
   computed: {
     heroDescription() {
       console.log(this.$route.path === "/home");
-      if (this.$route.path === "/home") {
+      if (
+        this.$route.path === "/home" ||
+        this.$route.path === "/" ||
+        this.$route.path === "/vue-first-project"
+      ) {
         return this.$store.getters["heroDescription"];
       }
       if (this.$route.path === "/projects") {
