@@ -1,11 +1,16 @@
 <template>
-  <section>
+  <section :class="mobileView ? 'sectionMobile' : ''">
     <transition name="hero" mode="out-in">
       <div :key="this.$route" :class="mobileView ? 'headerMobile' : 'header'">
         <img src="../../assets/me.jpg" />
-        <div v-if="this.$route.path != '/contact'">
+        <div
+          :class="mobileView ? 'pContainer' : ''"
+          v-if="this.$route.path != '/contact'"
+        >
           <slot
-            ><p>{{ heroDescription }}</p></slot
+            ><p :class="mobileView ? 'pMobile' : ''">
+              {{ heroDescription }}
+            </p></slot
           >
         </div>
         <div v-else>
@@ -85,6 +90,9 @@ section {
   padding: 100px 100px 0 100px;
   overflow: hidden;
 }
+.sectionMobile {
+  padding: 60px 0 0px;
+}
 div.header {
   background-color: #ccc;
   display: flex;
@@ -104,6 +112,9 @@ div {
 
 p {
   font-size: 3vw;
+}
+.pMobile {
+  font-size: 2rem;
 }
 ul {
   list-style: none;
@@ -141,4 +152,7 @@ li {
   opacity: 1;
   transform: scaleX(1);
 } */
+.pContainer {
+  padding: 20px;
+}
 </style>
