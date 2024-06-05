@@ -9,7 +9,11 @@ const router = createRouter({
   routes: [
     // { path: "/", redirect: "/home" },
     // { path: "/vue-first-project", redirect: "/home" },
-    { path: "/home", component: HomePage, alias: ["/", "/vue-first-project"] },
+    {
+      path: "/home",
+      component: HomePage,
+      alias: ["/", "/vue-first-project", "/vue-first-project/"],
+    },
     {
       path: "/about",
       component: AboutPage,

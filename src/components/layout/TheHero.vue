@@ -41,7 +41,8 @@ export default {
       if (
         this.$route.path === "/home" ||
         this.$route.path === "/" ||
-        this.$route.path === "/vue-first-project"
+        this.$route.path === "/vue-first-project" ||
+        this.$route.path === "/vue-first-project/"
       ) {
         return this.$store.getters["heroDescription"];
       }
@@ -54,7 +55,7 @@ export default {
       if (this.$route.path === "/admin" || this.$route.path === "/wp-admin") {
         return "This is not a wordpress page!!";
       }
-      return "This page doesn't exist!";
+      return this.$route.path;
     },
   },
   methods: {
