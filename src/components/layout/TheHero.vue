@@ -41,7 +41,7 @@ export default {
       if (
         this.$route.path === "/home" ||
         this.$route.path === "/" ||
-        this.$route.path === "/cv-vue"
+        this.$route.path === "/vue-first-project"
       ) {
         return this.$store.getters["heroDescription"];
       }
