@@ -1,5 +1,8 @@
 <template>
-  <section><img src="../assets/idle.gif" /></section>
+  <section>
+    <h1>Page not found!</h1>
+    <img src="../assets/idle.gif" />
+  </section>
 </template>
 
 <style scoped>

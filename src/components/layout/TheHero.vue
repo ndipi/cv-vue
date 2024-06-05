@@ -55,7 +55,7 @@ export default {
       if (this.$route.path === "/admin" || this.$route.path === "/wp-admin") {
         return "This is not a wordpress page!!";
       }
-      return this.$route.path;
+      return this.$store.getters["heroDescription"];
     },
   },
   methods: {
