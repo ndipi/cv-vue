@@ -157,8 +157,12 @@ li {
   padding: 20px;
 }
 div.headerMobile {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 div.headerMobile div {
   margin-bottom: 0;
