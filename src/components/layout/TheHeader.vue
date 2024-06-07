@@ -93,4 +93,13 @@ a.router-link-active.contact {
   color: snow;
   background-color: #c38743;
 }
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    width: 100%;
+  }
+  header a {
+    padding: 0.75rem 1rem;
+  }
+}
 </style>

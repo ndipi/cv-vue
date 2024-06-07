@@ -1,21 +1,21 @@
 <template>
   <section class="gallery">
-    <base-card title="Contact via Whatsapp">
-      <template v-slot:image
-        ><a href="https://wa.me/34605066810?text=Via%20web%20portfolio"
-          ><img src="../assets/wpp.png" /></a></template
-    ></base-card>
-    <base-card title="Contact via E-mail">
-      <template v-slot:image>
-        <a href="mailto:cndiazpi@gmail.com?subject=Via portfolio web"
-          ><img src="../assets/mail.png" /></a></template
-    ></base-card>
-    <base-card v-if="!mobileView" title="Contact via Gmail">
-      <template v-slot:image
-        ><a
-          href="https://mail.google.com/mail/u/0/?fs=1&to=cndiazpi@gmail.com&su=Via%20portfolio%20web%20-%20&tf=cm"
-          ><img src="../assets/gmail.webp" /></a></template
-    ></base-card>
+    <a href="https://wa.me/34605066810?text=Via%20web%20portfolio"
+      ><base-card title="Contact via Whatsapp">
+        <template v-slot:image
+          ><img src="../assets/wpp.png" /></template></base-card
+    ></a>
+    <a href="mailto:cndiazpi@gmail.com?subject=Via portfolio web"
+      ><base-card title="Contact via E-mail">
+        <template v-slot:image>
+          <img src="../assets/mail.png" /></template></base-card
+    ></a>
+    <a
+      href="https://mail.google.com/mail/u/0/?fs=1&to=cndiazpi@gmail.com&su=Via%20portfolio%20web%20-%20&tf=cm"
+      ><base-card v-if="!mobileView" title="Contact via Gmail">
+        <template v-slot:image
+          ><img src="../assets/gmail.webp" /></template></base-card
+    ></a>
   </section>
 </template>
 
@@ -71,5 +71,10 @@ p {
   grid-auto-flow: dense;
   grid-auto-rows: 12rem;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+
+.gallery a {
+  text-decoration: none;
+  color: #2c3e50;
 }
 </style>

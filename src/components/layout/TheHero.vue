@@ -114,7 +114,7 @@ p {
   font-size: 3vw;
 }
 .pMobile {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 ul {
   list-style: none;
